@@ -74,6 +74,7 @@ function drop_handler(ev) {
     return
   }
   
+  arrowColor(idNumber)
   previewSwitch(idNumber)
   stepSwitch(idNumber)
   stepperSet(idNumber)
@@ -128,9 +129,13 @@ function stepSwitch(id) {
 
 function previewSwitch(id) {
   let img = document.querySelector('.preview-image')
-  img.setAttribute('src', `assets/preview-0${Number(id)+1}.svg`)
+  img.setAttribute('src', `../assets/preview-0${Number(id)+1}.svg`)
   img.classList.add('preview-image-animation')
   setTimeout(() => {
     img.classList.remove('preview-image-animation')
   }, 500)
+}
+
+function arrowColor(id) {
+  document.querySelector(`.step-arrow-0${id}`).classList.add('step-arrow-filled')
 }

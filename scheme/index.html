@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Morris - Место у окна</title>
+    <link type="image/x-icon" href="../assets/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="../assets/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="stepper">
+            <div class="stepper-item stepper-item-active stepper-item-filled">
+                <div class="stepper-item-circle"><img src="../assets/step-01.svg"
+                        alt=""></div>
+                <div class="stepper-item-line"></div>
+            </div>
+
+            <div class="stepper-item">
+                <div class="stepper-item-line"></div>
+                <div class="stepper-item-circle"><img src="../assets/step-02.svg"
+                        alt=""></div>
+                <div class="stepper-item-line"></div>
+            </div>
+
+            <div class="stepper-item">
+                <div class="stepper-item-line"></div>
+                <div class="stepper-item-circle"><img src="../assets/step-03.svg"
+                        alt=""></div>
+                <div class="stepper-item-line"></div>
+            </div>
+
+            <div class="stepper-item">
+                <div class="stepper-item-line"></div>
+                <div class="stepper-item-circle"><img src="../assets/step-04.svg"
+                        alt=""></div>
+                <div class="stepper-item-line"></div>
+            </div>
+
+            <div class="stepper-item">
+                <div class="stepper-item-line"></div>
+                <div class="stepper-item-circle"><img src="../assets/step-05.svg"
+                        alt=""></div>
+                <div class="stepper-item-line"></div>
+            </div>
+
+            <div class="stepper-item">
+                <div class="stepper-item-line"></div>
+                <div class="stepper-item-circle"><img src="../assets/step-03.svg"
+                        alt=""></div>
+                <div class="stepper-item-line"></div>
+            </div>
+        </div>
+
+        <div class="step-description">
+            <img src="../assets/final.svg" alt="">
+            <h1>Шаг 1</h1>
+            <p>Прежде чем бронировать место, пользователю нужно выбрать офис. Перетащите нужный вариант на активный шаг.</p>
+            <a href="#" class="button" onclick="location.reload()">Начать сначала</a>
+        </div>
+
+        <img src="../assets/preview-01.svg" class="preview-image" alt="">
+
+        <img src="../assets/logo.svg" class="logo" alt="">
+    </div>
+
+    <div class="scheme-playground">
+        <div class="scheme-wrapper">
+            <div class="scheme-item scheme-start">Старт</div>
+
+            <div class="center-arrow step-arrow-03">
+                <div></div>
+                <div></div>
+                <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z"
+                        fill="#311D68" />
+                </svg>
+            </div>
+
+            <div class="scheme-item" id="step-04">Шаг 4</div>
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="step-arrow-filled">
+                <path
+                    d="M19.2929 36.7071C19.6834 37.0976 20.3166 37.0976 20.7071 36.7071L27.0711 30.3431C27.4616 29.9526 27.4616 29.3195 27.0711 28.9289C26.6805 28.5384 26.0474 28.5384 25.6569 28.9289L20 34.5858L14.3431 28.9289C13.9526 28.5384 13.3195 28.5384 12.9289 28.9289C12.5384 29.3195 12.5384 29.9526 12.9289 30.3431L19.2929 36.7071ZM19 4V36H21V4H19Z"
+                    fill="#311D68" />
+            </svg>
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="step-arrow-04">
+                <path
+                    d="M19.2929 36.7071C19.6834 37.0976 20.3166 37.0976 20.7071 36.7071L27.0711 30.3431C27.4616 29.9526 27.4616 29.3195 27.0711 28.9289C26.6805 28.5384 26.0474 28.5384 25.6569 28.9289L20 34.5858L14.3431 28.9289C13.9526 28.5384 13.3195 28.5384 12.9289 28.9289C12.5384 29.3195 12.5384 29.9526 12.9289 30.3431L19.2929 36.7071ZM19 4V36H21V4H19Z"
+                    fill="#311D68" />
+            </svg>
+
+            <div class="scheme-item scheme-item-active" id="step-01" ondrop="drop_handler(event)"
+                ondragover="dragover_handler(event)" ondragenter="dragenter_handler(event)"
+                ondragleave="dragleave_handler(event)">Шаг 1</div>
+            <div class="scheme-item" id="step-05">Шаг 5</div>
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="step-arrow-01">
+                <path
+                    d="M19.2929 36.7071C19.6834 37.0976 20.3166 37.0976 20.7071 36.7071L27.0711 30.3431C27.4616 29.9526 27.4616 29.3195 27.0711 28.9289C26.6805 28.5384 26.0474 28.5384 25.6569 28.9289L20 34.5858L14.3431 28.9289C13.9526 28.5384 13.3195 28.5384 12.9289 28.9289C12.5384 29.3195 12.5384 29.9526 12.9289 30.3431L19.2929 36.7071ZM19 4V36H21V4H19Z"
+                    fill="#311D68" />
+            </svg>
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="step-arrow-05">
+                <path
+                    d="M19.2929 36.7071C19.6834 37.0976 20.3166 37.0976 20.7071 36.7071L27.0711 30.3431C27.4616 29.9526 27.4616 29.3195 27.0711 28.9289C26.6805 28.5384 26.0474 28.5384 25.6569 28.9289L20 34.5858L14.3431 28.9289C13.9526 28.5384 13.3195 28.5384 12.9289 28.9289C12.5384 29.3195 12.5384 29.9526 12.9289 30.3431L19.2929 36.7071ZM19 4V36H21V4H19Z"
+                    fill="#311D68" />
+            </svg>
+
+            <div class="scheme-item" id="step-02">Шаг 2</div>
+            <div class="scheme-item" id="step-06">Шаг 6</div>
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="step-arrow-02">
+                <path
+                    d="M19.2929 36.7071C19.6834 37.0976 20.3166 37.0976 20.7071 36.7071L27.0711 30.3431C27.4616 29.9526 27.4616 29.3195 27.0711 28.9289C26.6805 28.5384 26.0474 28.5384 25.6569 28.9289L20 34.5858L14.3431 28.9289C13.9526 28.5384 13.3195 28.5384 12.9289 28.9289C12.5384 29.3195 12.5384 29.9526 12.9289 30.3431L19.2929 36.7071ZM19 4V36H21V4H19Z"
+                    fill="#311D68" />
+            </svg>
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="step-arrow-06">
+                <path
+                    d="M19.2929 36.7071C19.6834 37.0976 20.3166 37.0976 20.7071 36.7071L27.0711 30.3431C27.4616 29.9526 27.4616 29.3195 27.0711 28.9289C26.6805 28.5384 26.0474 28.5384 25.6569 28.9289L20 34.5858L14.3431 28.9289C13.9526 28.5384 13.3195 28.5384 12.9289 28.9289C12.5384 29.3195 12.5384 29.9526 12.9289 30.3431L19.2929 36.7071ZM19 4V36H21V4H19Z"
+                    fill="#311D68" />
+            </svg>
+
+            <div class="scheme-item" id="step-03">Шаг 3</div>
+            <div class="scheme-item scheme-end">Конец</div>
+        </div>
+
+        <div class="variant-wrapper">
+            <div class="variant-item" id="variant-06" draggable="true" ondragstart="dragstart_handler(event)">
+                Подтверждение бронирования
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H22M6 14H22" stroke="#655AA8" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="variant-item" id="variant-04" draggable="true" ondragstart="dragstart_handler(event)">
+                Выбор места
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H22M6 14H22" stroke="#655AA8" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="variant-item" id="variant-03" draggable="true" ondragstart="dragstart_handler(event)">
+                Показ свободных мест
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H22M6 14H22" stroke="#655AA8" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="variant-item" id="variant-07" draggable="true" ondragstart="dragstart_handler(event)">
+                Заказ пропуска
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H22M6 14H22" stroke="#655AA8" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="variant-item" id="variant-02" draggable="true" ondragstart="dragstart_handler(event)">
+                Проверка доступности офиса
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H22M6 14H22" stroke="#655AA8" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="variant-item" id="variant-05" draggable="true" ondragstart="dragstart_handler(event)">
+                Проверка доступности места
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H22M6 14H22" stroke="#655AA8" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="variant-item" id="variant-01" draggable="true" ondragstart="dragstart_handler(event)">
+                Выбор нужного офиса
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H22M6 14H22" stroke="#655AA8" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="variant-item" id="variant-08" draggable="true" ondragstart="dragstart_handler(event)">
+                Проверка доступности парковки
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H22M6 14H22" stroke="#655AA8" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
