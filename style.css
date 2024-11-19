@@ -22,7 +22,7 @@ body {
 h1 {
   font-size: 32px;
   line-height: 38px;
-  margin-top: 64px;
+  margin-top: 48px;
 }
 
 p {
@@ -34,7 +34,7 @@ p {
 }
 
 img {
-  width: 160px;
+  width: 240px;
 }
 
 .button {
