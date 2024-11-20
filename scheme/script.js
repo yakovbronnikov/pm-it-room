@@ -69,7 +69,7 @@ function drop_handler(ev) {
   }
   
   if (idNumber == '6') {
-    finalStepStyle()
+    document.querySelector('.step-arrow-06').classList.add('step-arrow-filled')
     document.querySelector('.scheme-end').classList.add('scheme-start')
     return
   }
