@@ -27,7 +27,7 @@ let stepText = [
   },
   {
     title: 'Ура, всё на месте!',
-    text: 'Пользователь нашел своё уютное местечко у окна, а вы научились составлять упрощенную блок-схему'
+    text: 'Вы неплохо потрудились, блок-схема составлена. Теперь давайте посмотрим на результат.'
   }
 ]
 
@@ -69,8 +69,7 @@ function drop_handler(ev) {
   }
   
   if (idNumber == '6') {
-    document.querySelector('.step-arrow-06').classList.add('step-arrow-filled')
-    document.querySelector('.scheme-end').classList.add('scheme-start')
+    finalStepStyle()
     return
   }
   
@@ -101,6 +100,9 @@ function finalStepStyle() {
   document.querySelector('.step-description').classList.add('step-description-final')
   document.querySelector('.stepper').style.display = 'none'
   document.querySelector('.variant-wrapper').style.display = 'none'
+  document.querySelector('.step-arrow-06').classList.add('step-arrow-filled')
+  document.querySelector('.scheme-end').classList.add('scheme-start')
+  document.querySelector('.sidebar').style.width = '100%'
 }
 
 

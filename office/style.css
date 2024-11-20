@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1B1034;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 24px;
+  gap: 64px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.office-list {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  max-width: 800px;
+}
+
+.office-item {
+  flex-grow: 1;
+  padding: 40px 40px 32px;
+  background: #1F153C;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: 250ms;
+  text-decoration: none;
+  text-align: center;
+}
+
+.office-item:hover {
+  background: #241F4D;
+}
+
+.office-item div {
+  width: 80px;
+  height: 80px;
+  background: #413585;
+  border-radius: 40px;
+}
+
+.office-item div img{
+  width: 80px;
+}
+
+.office-item h3 {
+  margin-top: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.office-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #BDB3F5;
+}

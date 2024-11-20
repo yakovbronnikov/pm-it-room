@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1B1034;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 24px;
+  gap: 64px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  color: #BDB3F5;
+  font-weight: 600;
+}
+
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  animation: loading-fall 5s ease-in-out forwards;
+}
+
+@keyframes loading-fall {
+  95% {translate: 0px; opacity: 1;}
+  99.99999% {translate: 0px -100px; opacity: 0;}
+  100% {display: none;}
+}
+
+
+.loading img {
+  width: 240px;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  100% {rotate: 360deg;}
+}
+
+
+.loading-title {
+  height: 60px;
+  overflow: hidden;
+}
+
+.loading-title h2:nth-child(1) {
+  animation: title-1 2.5s ease-in-out forwards;
+}
+
+.loading-title h2:nth-child(2) {
+  animation: title-2 2.5s ease-in-out forwards;
+}
+
+
+@keyframes title-1 {
+  85% {opacity: 1;}
+  90% {translate: 0px;}
+  100% {translate: 0px -60px; opacity: 0;}
+}
+
+@keyframes title-2 {
+  85% {opacity: 0;}
+  90% {translate: 0px;}
+  100% {translate: 0px -60px; opacity: 1;}
+}
+
+
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  animation: success 5.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes success {
+  0% {display: none;}
+  95% {display: none;}
+  95.1% {display: flex;}
+  95.2% {opacity: 0; translate: 0px 10px;}
+  100% {opacity: 1; translate: 0px;}
+}
+
+.success img {
+  width: 180px;
+}
+
+
+.button {
+  background: #413585;
+  padding: 16px 32px;
+  border-radius: 8px;
+  transition: 200ms;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
